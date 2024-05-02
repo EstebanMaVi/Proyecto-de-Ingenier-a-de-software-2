@@ -2,16 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="eureka" />
+        <module name="polizas" />
+        <module name="oauth-security" />
+        <module name="pasarela-pago" />
         <module name="usuarios" />
         <module name="pagos" />
         <module name="gateway" />
-        <module name="eureka" />
-        <module name="polizas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,7 +26,9 @@
       <module name="config-server" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="oauth-security" options="-parameters" />
       <module name="pagos" options="-parameters" />
+      <module name="pasarela-pago" options="-parameters" />
       <module name="polizas" options="-parameters" />
       <module name="usuario" options="-parameters" />
       <module name="usuarios" options="-parameters" />

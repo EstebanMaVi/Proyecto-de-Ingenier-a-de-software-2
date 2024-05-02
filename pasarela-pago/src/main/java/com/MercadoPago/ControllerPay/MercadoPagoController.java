@@ -10,10 +10,11 @@ import com.mercadopago.exceptions.MPApiException;
 import com.mercadopago.exceptions.MPException;
 import com.mercadopago.resources.preference.Preference;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -25,7 +26,12 @@ public class MercadoPagoController {
     @Value("${codigo.mercadoLibre}")
     private String mercadoLibreToken;
 
-    @RequestMapping(value = "api/mp", method = RequestMethod.POST)
+    @GetMapping("/api/checkout")
+    public RedirectView redirectIndex() {
+        return new RedirectView("/");
+    }
+
+    @RequestMapping(value = "/api/mp", method = RequestMethod.POST)
     public String getList (@RequestBody UserBuyer userBuyer) {
         if(userBuyer  == null){return "error jsons :/";}
         String title = userBuyer.getTittle();

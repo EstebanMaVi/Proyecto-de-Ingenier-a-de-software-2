@@ -55,7 +55,7 @@ public class SecurityConfig  {
     @Bean
     public SecurityFilterChain signInSecurityFilterChain(HttpSecurity httpSecurity) throws Exception{
         return httpSecurity
-                .securityMatcher(new AntPathRequestMatcher("/iniciar-sesion/**"))
+                .securityMatcher(new AntPathRequestMatcher("/oauth/iniciar-sesion/**"))
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
                 .userDetailsService(userInfoManagerConfig)
@@ -91,7 +91,7 @@ public class SecurityConfig  {
     @Bean
     public SecurityFilterChain refreshTokenSecurityFilterChain(HttpSecurity httpSecurity) throws Exception{
         return httpSecurity
-                .securityMatcher(new AntPathRequestMatcher("/refrescar-token/**"))
+                .securityMatcher(new AntPathRequestMatcher("/oauth/refrescar-token/**"))
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults()))
@@ -110,14 +110,14 @@ public class SecurityConfig  {
     @Bean
     public SecurityFilterChain logoutSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-                .securityMatcher(new AntPathRequestMatcher("/cerrar-sesion/**"))
+                .securityMatcher(new AntPathRequestMatcher("/oauth/cerrar-sesion/**"))
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults()))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(new JwtAccessTokenFilter(rsaKeyRecord,jwtTokenUtils), UsernamePasswordAuthenticationFilter.class)
                 .logout(logout -> logout
-                        .logoutUrl("/cerrar-sesion")
+                        .logoutUrl("/oauth/cerrar-sesion")
                         .addLogoutHandler(logoutHandlerService)
                         .logoutSuccessHandler(((request, response, authentication) -> SecurityContextHolder.clearContext()))
                 )
@@ -133,7 +133,7 @@ public class SecurityConfig  {
     @Bean
     public SecurityFilterChain registerSecurityFilterChain(HttpSecurity httpSecurity) throws Exception{
         return httpSecurity
-                .securityMatcher(new AntPathRequestMatcher("/registrarse/**"))
+                .securityMatcher(new AntPathRequestMatcher("/oauth/registrarse/**"))
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth ->
                         auth.anyRequest().permitAll())

@@ -11,7 +11,7 @@ const MP = async ()=>{
         miArticulo.unit_price = 200000;
 
 
-        const  response = await fetch("api/mp",{
+        const  response = await fetch("/api/mp",{
             method: 'POST',
             headers:{
                 'Accept': 'Application/json',

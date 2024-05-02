@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "polizas",url = "localhost:8070/api/polizas")
+@FeignClient(name = "polizas",url = "localhost:8080/api/polizas")
 public interface PolizaClient {
 
     @GetMapping("/buscar-por-listId/{lista}")
