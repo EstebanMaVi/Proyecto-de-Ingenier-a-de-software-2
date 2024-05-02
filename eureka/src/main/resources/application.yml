@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: eureka-app
+    hostname: localhost
     prefer-ip-address: false
   client:
     register-with-eureka: false

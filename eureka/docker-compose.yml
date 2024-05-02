@@ -7,3 +7,5 @@ services:
     build: .
     ports:
       - "8761:8761"
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://eureka-app:8761/eureka
