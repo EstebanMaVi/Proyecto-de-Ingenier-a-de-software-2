@@ -1,9 +1,0 @@
-version: '3.9'
-
-services:
-  polizas-app:
-    container_name: polizas_app
-    image: stp:polizas
-    build: .
-    ports:
-      - "8070:8070"

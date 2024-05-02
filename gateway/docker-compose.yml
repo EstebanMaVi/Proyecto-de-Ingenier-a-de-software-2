@@ -1,9 +1,0 @@
-version: '3.9'
-
-services:
-  gateway-app:
-    container_name: gateway_app
-    image: stp:gateway
-    build: .
-    ports:
-      - "8080:8080"
