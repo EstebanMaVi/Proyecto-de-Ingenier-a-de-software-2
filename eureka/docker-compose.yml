@@ -1,9 +1,0 @@
-version: '3.9'
-
-services:
-  eureka-app:
-    container_name: eureka_app
-    image: stp:eureka
-    build: .
-    ports:
-      - "8761:8761"
