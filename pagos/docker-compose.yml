@@ -1,0 +1,9 @@
+ version: '3.9'
+
+ services:
+   pagos-app:
+     container_name: pagos_app
+     image: stp:pagos
+     build: .
+     ports:
+       - "8050:8050"

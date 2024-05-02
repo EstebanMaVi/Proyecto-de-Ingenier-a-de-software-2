@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  oauth-app:
+    container_name: oauth_app
+    image: stp:oauth
+    build: .
+    ports:
+      - "8120:8120"
