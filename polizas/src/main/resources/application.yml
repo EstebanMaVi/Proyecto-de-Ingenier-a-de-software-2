@@ -15,7 +15,7 @@ spring:
     import: optional:configserver:http://localhost:8888
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://database-1.c1mye0us286l.us-east-2.rds.amazonaws.com:5432/polizasDB
+    url: jdbc:postgresql://segurostupapa.cl6cis0iiz8q.us-east-1.rds.amazonaws.com:5432/polizasDB
     username: postgres
     password: postgres
   jpa:
