@@ -12,12 +12,6 @@
         <module name="polizas" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eureka" target="17" />
-      <module name="oauth-security" target="17" />
-      <module name="pasarela-pago" target="17" />
-      <module name="usuarios" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
