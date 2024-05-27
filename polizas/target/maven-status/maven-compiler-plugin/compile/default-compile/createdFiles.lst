@@ -1,0 +1,7 @@
+com\segurosTuPapa\polizas\controller\PolizaController.class
+com\segurosTuPapa\polizas\entities\Poliza.class
+com\segurosTuPapa\polizas\persistence\PolizaRepository.class
+com\segurosTuPapa\polizas\PolizasApplication.class
+com\segurosTuPapa\polizas\service\PolizaServiceImpl.class
+com\segurosTuPapa\polizas\service\IPolizaService.class
+com\segurosTuPapa\polizas\entities\Poliza$PolizaBuilder.class

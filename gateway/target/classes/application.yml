@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enable: true
+      routes:
+        - id: usuarios
+          uri: lb://usuarios
+          predicates:
+            - Path=/api/usuario/**
+        - id: oauth
+          uri: lb://oauth
+          predicates:
+            - Path=/oauth/**, /api/oauth/**
+        - id: polizas
+          uri: lb://polizas
+          predicates:
+            - Path=/api/polizas/**
+        - id: pagos
+          uri: lb://pagos
+          predicates:
+            - Path=/api/pagos/**
+        - id: pasarela-pagos
+          uri: lb://pasarela-pagos
+          predicates:
+            - Path=/api/checkout/**

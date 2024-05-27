@@ -1,0 +1,3 @@
+com\MercadoPago\PasarelaPagoApplication.class
+com\MercadoPago\ControllerPay\MercadoPagoController.class
+com\MercadoPago\ModelEntity\UserBuyer.class

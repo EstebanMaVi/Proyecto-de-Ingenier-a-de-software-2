@@ -24,6 +24,9 @@
       <sourceFolder url="file://$MODULE_DIR$/usuarios/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/usuarios/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/usuarios/src/test" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/eureka/target" />
+      <excludeFolder url="file://$MODULE_DIR$/pasarela-pago/target" />
+      <excludeFolder url="file://$MODULE_DIR$/usuarios/target" />
     </content>
     <orderEntry type="jdk" jdkName="corretto-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />

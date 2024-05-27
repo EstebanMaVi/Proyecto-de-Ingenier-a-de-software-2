@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "com.springsecurity.oauth2.config.RSAKeyRecord",
+      "sourceType": "com.springsecurity.oauth2.config.RSAKeyRecord"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.rsa-private-key",
+      "type": "java.security.interfaces.RSAPrivateKey",
+      "sourceType": "com.springsecurity.oauth2.config.RSAKeyRecord"
+    },
+    {
+      "name": "jwt.rsa-public-key",
+      "type": "java.security.interfaces.RSAPublicKey",
+      "sourceType": "com.springsecurity.oauth2.config.RSAKeyRecord"
+    }
+  ],
+  "hints": []
+}

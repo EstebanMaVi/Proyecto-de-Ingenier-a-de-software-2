@@ -1,0 +1,8 @@
+com\segurosTuPapa\pagos\entities\Pago$PagoBuilder.class
+com\segurosTuPapa\pagos\client\UsuarioClient.class
+com\segurosTuPapa\pagos\PagosApplication.class
+com\segurosTuPapa\pagos\entities\Pago.class
+com\segurosTuPapa\pagos\service\IPagoService.class
+com\segurosTuPapa\pagos\service\PagoServiceImpl.class
+com\segurosTuPapa\pagos\controller\PagoController.class
+com\segurosTuPapa\pagos\persistence\PagoRespository.class
