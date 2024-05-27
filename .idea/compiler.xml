@@ -7,31 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
-        <module name="eureka" />
-        <module name="oauth-security" />
-        <module name="pasarela-pago" />
-        <module name="polizas" />
-        <module name="usuarios" />
         <module name="pagos" />
         <module name="gateway" />
+        <module name="polizas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="usuario" target="17" />
+      <module name="eureka" target="17" />
+      <module name="oauth-security" target="17" />
+      <module name="pasarela-pago" target="17" />
+      <module name="usuarios" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="config-server" options="-parameters" />
-      <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
-      <module name="oauth-security" options="-parameters" />
       <module name="pagos" options="-parameters" />
-      <module name="pasarela-pago" options="-parameters" />
       <module name="polizas" options="-parameters" />
-      <module name="usuario" options="-parameters" />
-      <module name="usuarios" options="-parameters" />
     </option>
   </component>
 </project>
