@@ -1,0 +1,12 @@
+com\segurosTuPapa\usuarios\client\PolizaClient.class
+com\segurosTuPapa\usuarios\persistence\UsuarioRepository.class
+com\segurosTuPapa\usuarios\http\response\PolizaByUsuarioResponse$PolizaByUsuarioResponseBuilder.class
+com\segurosTuPapa\usuarios\controller\UsuarioController.class
+com\segurosTuPapa\usuarios\service\IUsuarioService.class
+com\segurosTuPapa\usuarios\dto\PolizaDTO$PolizaDTOBuilder.class
+com\segurosTuPapa\usuarios\http\response\PolizaByUsuarioResponse.class
+com\segurosTuPapa\usuarios\UsuariosApplication.class
+com\segurosTuPapa\usuarios\dto\PolizaDTO.class
+com\segurosTuPapa\usuarios\entities\Usuario$UsuarioBuilder.class
+com\segurosTuPapa\usuarios\entities\Usuario.class
+com\segurosTuPapa\usuarios\service\UsuarioServiceImpl.class
