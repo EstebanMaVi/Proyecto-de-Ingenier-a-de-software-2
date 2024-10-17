@@ -5,4 +5,4 @@
 * Alfonso Miguel Hernández
 * Sebastian Valderrama
 * Natalia Cajiado
-*Esteban Marini Viteri
+* Esteban Marini Viteri
