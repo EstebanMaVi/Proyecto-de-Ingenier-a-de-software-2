@@ -1,8 +1,8 @@
-# Proyecto_de_Ingeniería_de_software_2
+# Proyecto Ingenieria de Software 2
 
 
-Creadores:
-Alfonso Miguel Hernandez
-Sebastian Valderrama
-Natalia Cajiado
-Esteban Marini Viteri
+**Creadores:**
+* Alfonso Miguel Hernández
+* Sebastian Valderrama
+* Natalia Cajiado
+*Esteban Marini Viteri
